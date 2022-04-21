@@ -32,7 +32,6 @@ for i in file1:
 file1.close
 print(Email,"\n") 
 print(Pass,"\n")
-# driver = webdriver.Chrome('./chromedriver.exe', options=opts)
 driver = webdriver.Chrome('./chromedriver.exe')
 x=0
 for x in range(N):
@@ -60,21 +59,4 @@ for x in range(N):
     print("s6")
     sleep(2)
     WebDriverWait(driver,5)
-
-    # ## parte capcha lamentabla mente es manual
-    # imput_pass= driver.find_element(By.XPATH,'/html/body/div[1]/div/main/div/div/div/div[6]/form/div[2]/input')
-    # print("s7")
-    # sleep(2)
-    # Y = input("y para cuando el cacha esta check")
-    # if Y is"y":
-    #     print("s8")
-    #     sleep(2)
-    #     imput_buton = driver.find_element(By.XPATH,'/html/body/div[1]/div/main/div/div/div/div[6]/form/div[4]/input')
-    #     print("s9")
-    #     sleep(2)
-    #     imput_pass.send_keys(Pass[x])
-    #     print("s10")
-    #     sleep(2)
-    #     imput_buton.click()
-    #     print("s11")
-    #     sleep(2)
+    driver.close()
