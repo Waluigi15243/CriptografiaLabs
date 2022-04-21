@@ -12,7 +12,7 @@ opts.add_argument("Mozilla/5.0 (Windows NT 4.0; WOW64) AppleWebKit/537.36 (KHTML
 
 Nombre = ["Camilo"]
 Apellido = ["Omori"]
-Email = [""] #Pagina de correo temporal --> https://temp-mail.org/es/change
+Email = [""] #Pagina de correo temporal --> https://correotemporal.org/
 Telefono = [""] #Inserte un numero telefonico
 Password = ["am0gus"]
 NewPassword = ["k1dam0gus"]
