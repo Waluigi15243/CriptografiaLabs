@@ -116,12 +116,17 @@ WebDriverWait(driver,15).until(EC.presence_of_all_elements_located((By.XPATH,'/h
 imput_buton = driver.find_element(By.XPATH,'/html/body/main/section/div/div/div/section/section/form/footer/button')
 sleep(2)
 
+imput_checbox = driver.find_element(By.XPATH, '/html/body/main/section/div/div/div/section/section/form/section/div[8]/div[1]/span/input')
+sleep(2)
+
 imput_pass = driver.find_element(By.XPATH,'/html/body/main/section/div/div/div/section/section/form/section/div[5]/div[1]/div/input')
 sleep(2)
 
 imput_newpass = driver.find_element(By.XPATH,'/html/body/main/section/div/div/div/section/section/form/section/div[6]/div[1]/div/input')
 sleep(2)
 
+imput_checbox.click()
+sleep(2)
 imput_pass.send_keys(Password)
 sleep(2)
 imput_newpass.send_keys(NewPassword)
@@ -129,6 +134,6 @@ sleep(2)
 imput_buton.click()
 
 
-sleep(4)
+sleep(10)
 
 driver.close()
